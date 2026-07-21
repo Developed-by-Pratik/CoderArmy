@@ -8,6 +8,7 @@ import lombok.*;
 @Table(name = "student")
 @Getter
 @Setter
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 public class Student {
@@ -35,4 +36,5 @@ public class Student {
     @NotBlank
     private String subject;
 
+    private boolean isDeleted = false;
 }
